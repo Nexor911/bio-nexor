@@ -52,5 +52,31 @@
   <h1> С Днём Рождения, Рона! </h1>
   <p>Ты невероятна.</p>
   <button onclick="window.location.href='index.html'">Вернуться на сайт</button>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script>
+  const duration = 4000;
+  const end = Date.now() + duration;
+
+  const frame = () => {
+    confetti({
+      particleCount: 3,
+      angle: 60,
+      spread: 55,
+      origin: { x: 0 }
+    });
+    confetti({
+      particleCount: 3,
+      angle: 120,
+      spread: 55,
+      origin: { x: 1 }
+    });
+
+    if (Date.now() < end) {
+      requestAnimationFrame(frame);
+    }
+  };
+
+  frame();
+</script>
 </body>
 </html>
