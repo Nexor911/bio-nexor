@@ -118,6 +118,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+    function checkBirthday() {
+        const now = new Date();
+        const mskOffset = 3 * 60 * 60 * 1000;
+        const mskNow = new Date(now.getTime() + mskOffset);
+
+        const isApril21 = mskNow.getMonth() === 3 && mskNow.getDate() === 21;
+        const isMidnight = mskNow.getHours() === 0 && mskNow.getMinutes() < 5;
+
+        if (isApril21 && isMidnight) {
+            window.location.href = 'birthday.html';
+        }
+    }
+
+    checkBirthday();
+</script>
 </body>
 </html>
-
