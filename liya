@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>С Днем Рождения, Рона</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      animation: fadeIn 3s ease;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    h1 {
+      font-size: 3rem;
+      animation: neon 2s infinite alternate;
+    }
+
+    @keyframes neon {
+      from { text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc; }
+      to { text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff; }
+    }
+
+    button {
+      margin-top: 2rem;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: #111;
+      color: white;
+      border: 1px solid #444;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #222;
+    }
+  </style>
+</head>
+<body>
+  <h1> С Днём Рождения, Рона! </h1>
+  <p>Ты невероятна.</p>
+  <button onclick="window.location.href='index.html'">Вернуться на сайт</button>
+</body>
+</html>
