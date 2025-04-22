@@ -1,133 +1,122 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <title>NEXOR — Bio</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #111;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      flex-direction: column;
-    }
-
-    .countdown {
-      font-size: 2rem;
-      color: #00c4cc;
-      font-weight: bold;
-      margin-top: 40px;
-      position: absolute;
-      top: 10%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .container {
-      padding: 50px 20px;
-      z-index: 1;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      color: #00c4cc;
-      letter-spacing: 2px;
-    }
-
-    .subtitle {
-      font-size: 1.5rem;
-      color: #00c4cc;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .description {
-      font-size: 1.2rem;
-      color: #bbb;
-      margin-bottom: 20px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .links {
-      margin-top: 30px;
-    }
-
-    .link-item {
-      display: inline-block;
-      margin: 10px 20px;
-      padding: 12px 20px;
-      background-color: #222;
-      border-radius: 8px;
-      text-decoration: none;
-      color: #fff;
-      font-size: 1.2rem;
-      transition: background-color 0.3s ease;
-    }
-
-    .link-item:hover {
-      background-color: #00c4cc;
-      transform: scale(1.05);
-    }
-  </style>
-</head>
-<body>
-
-<div id="countdown" class="countdown"></div>
-
-<div class="container">
-    <h1 id="title">NEXOR</h1>
-    <p class="subtitle" id="subtitle">OSINT | Cybersecurity | Automation</p>
-
-    <p class="description">
-        I'm passionate about uncovering digital footprints and securing online spaces. 
-        With a deep interest in automation, cybersecurity, and open-source intelligence, 
-        I'm always seeking new ways to push the boundaries of what's possible.
-    </p>
-
-    <div class="links">
-        <a href="https://t.me/KARMA_CKAMEROV" target="_blank" class="link-item">
-            <i class="fab fa-telegram"></i> Telegram
-        </a>
-        <a href="https://github.com/Nexor911" target="_blank" class="link-item">
-            <i class="fab fa-github"></i> GitHub
-        </a>
-    </div>
-</div>
-
-<script>
-    const targetDate = new Date('2025-04-22T00:01:00+03:00'); // 22 апреля, 00:01 по МСК
-
-    function updateCountdown() {
-        const now = new Date();
-        const diff = targetDate - now;
-
-        if (diff <= 0) {
-            window.location.href = "liya.html";
-        } else {
-            const hours = Math.floor(diff / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-            document.getElementById('countdown').innerHTML = `${hours} час ${minutes} минут ${seconds} секунд до ####`;
-        }
-    }
-
-    setInterval(updateCountdown, 1000);
-
-    updateCountdown();
-</script>
-
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</body>
-</html>
+ <html lang="ru">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>NEXOR — Bio</title>
+     <link rel="stylesheet" href="style.css">
+ 
+     <!-- Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10511867690"></script>
+     <script>
+         window.dataLayer = window.dataLayer  [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'UA-10511867690');
+     </script>
+     
+     <!-- Google Tag Manager -->
+     <script>(function(w,d,s,l,i){w[l]=w[l][];w[l].push({'gtm.start':
+     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+     })(window,document,'script','dataLayer','GTM-P7X9GB3N');</script>
+ 
+     <style>
+         body {
+             font-family: 'Arial', sans-serif;
+             background-color: #111;
+             color: #fff;
+             margin: 0;
+             padding: 0;
+             text-align: center;
+         }
+ 
+         .container {
+             padding: 50px 20px;
+         }
+ 
+         h1 {
+             font-size: 3rem;
+             margin-bottom: 10px;
+             color: #00c4cc;
+             letter-spacing: 2px;
+         }
+ 
+         .subtitle {
+             font-size: 1.5rem;
+             color: #00c4cc;
+             margin-bottom: 20px;
+             text-transform: uppercase;
+             letter-spacing: 1px;
+         }
+ 
+         .description {
+             font-size: 1.2rem;
+             color: #bbb;
+             margin-bottom: 20px;
+             max-width: 700px;
+             margin-left: auto;
+             margin-right: auto;
+         }
+ 
+         .links {
+             margin-top: 30px;
+         }
+ 
+         .link-item {
+             display: inline-block;
+             margin: 10px 20px;
+             padding: 12px 20px;
+             background-color: #222;
+             border-radius: 8px;
+             text-decoration: none;
+             color: #fff;
+             font-size: 1.2rem;
+             transition: background-color 0.3s ease;
+         }
+ 
+         .link-item:hover {
+             background-color: #00c4cc;
+             transform: scale(1.05);
+         }
+ 
+         .footer {
+             margin-top: 50px;
+             font-size: 1rem;
+             color: #777;
+         }
+     </style>
+ </head>
+ <body>
+ 
+ <!-- Google Tag Manager (noscript) -->
+ <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7X9GB3N"
+ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+ <!-- End Google Tag Manager (noscript) -->
+ 
+ <div class="container">
+     <h1 id="title">NEXOR</h1>
+     <p class="subtitle" id="subtitle">OSINT | Cybersecurity | Automation</p>
+ 
+     <p class="description">
+         I'm passionate about uncovering digital footprints and securing online spaces. 
+         With a deep interest in automation, cybersecurity, and open-source intelligence, 
+         I'm always seeking new ways to push the boundaries of what's possible.
+     </p>
+ 
+     <div class="links">
+         <a href="https://t.me/KARMA_CKAMEROV" target="_blank" class="link-item">
+             <i class="fab fa-telegram"></i> Telegram
+         </a>
+         <a href="https://github.com/Nexor911" target="_blank" class="link-item">
+             <i class="fab fa-github"></i> GitHub
+         </a>
+     </div>
+ 
+     <p class="footer">Stay Invisible. Stay Curious. 🚀</p>
+ </div>
+ 
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ </body>
+ </html>
