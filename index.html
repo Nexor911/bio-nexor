@@ -1,122 +1,242 @@
 <!DOCTYPE html>
- <html lang="ru">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>NEXOR — Bio</title>
-     <link rel="stylesheet" href="style.css">
- 
-     <!-- Google Analytics -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10511867690"></script>
-     <script>
-         window.dataLayer = window.dataLayer  [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         gtag('config', 'UA-10511867690');
-     </script>
-     
-     <!-- Google Tag Manager -->
-     <script>(function(w,d,s,l,i){w[l]=w[l][];w[l].push({'gtm.start':
-     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-     })(window,document,'script','dataLayer','GTM-P7X9GB3N');</script>
- 
-     <style>
-         body {
-             font-family: 'Arial', sans-serif;
-             background-color: #111;
-             color: #fff;
-             margin: 0;
-             padding: 0;
-             text-align: center;
-         }
- 
-         .container {
-             padding: 50px 20px;
-         }
- 
-         h1 {
-             font-size: 3rem;
-             margin-bottom: 10px;
-             color: #00c4cc;
-             letter-spacing: 2px;
-         }
- 
-         .subtitle {
-             font-size: 1.5rem;
-             color: #00c4cc;
-             margin-bottom: 20px;
-             text-transform: uppercase;
-             letter-spacing: 1px;
-         }
- 
-         .description {
-             font-size: 1.2rem;
-             color: #bbb;
-             margin-bottom: 20px;
-             max-width: 700px;
-             margin-left: auto;
-             margin-right: auto;
-         }
- 
-         .links {
-             margin-top: 30px;
-         }
- 
-         .link-item {
-             display: inline-block;
-             margin: 10px 20px;
-             padding: 12px 20px;
-             background-color: #222;
-             border-radius: 8px;
-             text-decoration: none;
-             color: #fff;
-             font-size: 1.2rem;
-             transition: background-color 0.3s ease;
-         }
- 
-         .link-item:hover {
-             background-color: #00c4cc;
-             transform: scale(1.05);
-         }
- 
-         .footer {
-             margin-top: 50px;
-             font-size: 1rem;
-             color: #777;
-         }
-     </style>
- </head>
- <body>
- 
- <!-- Google Tag Manager (noscript) -->
- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P7X9GB3N"
- height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
- <!-- End Google Tag Manager (noscript) -->
- 
- <div class="container">
-     <h1 id="title">NEXOR</h1>
-     <p class="subtitle" id="subtitle">OSINT | Cybersecurity | Automation</p>
- 
-     <p class="description">
-         I'm passionate about uncovering digital footprints and securing online spaces. 
-         With a deep interest in automation, cybersecurity, and open-source intelligence, 
-         I'm always seeking new ways to push the boundaries of what's possible.
-     </p>
- 
-     <div class="links">
-         <a href="https://t.me/KARMA_CKAMEROV" target="_blank" class="link-item">
-             <i class="fab fa-telegram"></i> Telegram
-         </a>
-         <a href="https://github.com/Nexor911" target="_blank" class="link-item">
-             <i class="fab fa-github"></i> GitHub
-         </a>
-     </div>
- 
-     <p class="footer">Stay Invisible. Stay Curious.</p>
- </div>
- 
- <script src="https://kit.fontawesome.com/a076d05399.js"></script>
- </body>
- </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEXOR</title>
+  <meta name="description" content="Notes on OSINT, automation, and digital curiosity. I love Rona.">
+
+  <meta property="og:title" content="NEXOR • Digital Notes" />
+  <meta property="og:description" content="Exploring data, privacy, and automation. I love Rona." />
+  <meta property="og:url" content="https://nexor911.github.io/bio-nexor/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+.github {
+  background: rgba(10, 15, 25, 0.6);
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid rgba(138, 43, 226, 0.2);
+  text-align: center;
+  margin: 30px 0;
+}
+
+.github p {
+  color: #a0b0d0;
+  margin-bottom: 16px;
+}
+
+.github a {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #c77dff;
+  text-decoration: none;
+  padding: 12px 32px;
+  border: 1px solid rgba(138, 43, 226, 0.4);
+  border-radius: 14px;
+  transition: all 0.3s;
+}
+
+.github a:hover {
+  background: rgba(138, 43, 226, 0.1);
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #090910;
+      color: #e2e4f0;
+      font-family: 'Inter', system-ui, sans-serif;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 2.6rem;
+      margin-bottom: 12px;
+      color: #00e0ff;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: #a0b0d0;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.4rem;
+      color: #00e0ff;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: "•";
+      color: #ff3a80;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-bottom: 16px;
+      font-size: 1.05rem;
+      color: #c0c8e0;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #a0c0e0;
+      border-left: 2px solid #00e0ff;
+      padding-left: 20px;
+      margin: 24px 0;
+    }
+
+    .interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.92rem;
+      padding: 6px 16px;
+      background: rgba(0, 224, 255, 0.08);
+      border-radius: 20px;
+      color: #00e0ff;
+    }
+
+    .contact {
+      background: rgba(10, 15, 25, 0.6);
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid rgba(0, 224, 255, 0.2);
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #00e0ff;
+      text-decoration: none;
+      padding: 12px 32px;
+      border: 1px solid rgba(0, 224, 255, 0.4);
+      border-radius: 14px;
+      transition: all 0.3s;
+    }
+
+    .contact a:hover {
+      background: rgba(0, 224, 255, 0.1);
+      box-shadow: 0 0 15px rgba(0, 224, 255, 0.3);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      color: #8090b0;
+      font-size: 1.05rem;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 30px 16px; }
+      h1 { font-size: 2.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>NEXOR</h1>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        I’m not a “cybersecurity expert” — I’m a curious person who spends too much time
+        in internet where data leaks, footprints linger, and systems whisper.
+      </p>
+      <p>
+        My work sits at the intersection of <strong>OSINT</strong>, <strong>automation</strong>,
+        and <strong>digital privacy</strong>. I build small tools that help me (and sometimes others)
+        see what’s hidden in plain sight.
+      </p>
+      <div class="quote">
+        “The most interesting things are never in the logs — they’re between them.”
+      </div>
+    </section>
+
+    <section>
+      <h2>Interests</h2>
+      <p>What I’m currently diving into:</p>
+      <div class="interests">
+        <span class="tag">OSINT workflows</span>
+        <span class="tag">Telegram bots</span>
+        <span class="tag">Data scraping</span>
+        <span class="tag">Privacy audits</span>
+        <span class="tag">Python automation</span>
+        <span class="tag">Threat intelligence</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Current Focus</h2>
+      <p>
+        Right now, I’m refining a set of lightweight OSINT scripts that map digital footprints
+        without leaving traces. I believe automation should be silent, ethical, and precise.
+      </p>
+      <p>
+        I also write occasional notes — not tutorials, but reflections — on what I learn in the field.
+      </p>
+    </section>
+
+    <div class="contact">
+      <p>If you’d like to say hello, share a finding, or just chat about personal data — I’m on Telegram.</p>
+      <a href="https://t.me/KARMA_CKAMEROV" target="_blank">
+        📩 Message me on Telegram
+      </a>
+    </div>
+    
+    <div class="github">
+      <p>I also build small tools in the open access:</p>
+      <a href="https://github.com/Nexor911" target="_blank">
+        🔍 Explore my GitHub
+      </a>
+    </div>
+
+    <div class="footer">
+      Stay invisible. Stay kind. I love Rona.
+    </div>
+  </div>
+</body>
+</html>
